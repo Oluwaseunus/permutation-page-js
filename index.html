@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Permutations</title>
+</head>
+<body>
+    <div align="center">
+        
+        <form id="ourForm" onkeypress="return event.keyCode != 13">
+            <h1>Welcome to the Permutations site!</h1>
+            <div class="input-group mb-3">
+                <input id="inputty" type="text" class="form-control" placeholder="Words to permute" aria-label="Words to permute"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Permute</button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <p id="permtext"></p>
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
