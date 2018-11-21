@@ -12,7 +12,7 @@ function swap(alphabets, index1, index2) {
 
 function permute(alphabets, startIndex, endIndex) {
     if (startIndex === endIndex) {
-        finalString += `${alphabets.join(' ')}, `;
+        finalString += `${alphabets.join(' ')} </br>`;
     } else {
         var i;
         for (i = startIndex; i <= endIndex; i++) {
@@ -25,7 +25,7 @@ function permute(alphabets, startIndex, endIndex) {
 }
 
 function perm() {
-    finalString = "The permutations of your string include: ";
+    finalString = "The permutations of your string include:</br>";
     let alphabets = text.value.split(" ");
     permute(alphabets, 0, alphabets.length - 1);
 }
