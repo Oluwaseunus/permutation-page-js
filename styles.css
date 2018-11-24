@@ -1,23 +1,96 @@
+* {
+    /* border: 1px red solid; */
+}
+
 body {
-    box-sizing: border-box;
-    padding-top: 15px;
-    width: 50vw;
-    height: 75vh;
-    justify-content: center;
+    height: 100vh;
+}
+
+input {
+    width: 25%;
+}
+
+#main {
+    padding-top: 10%;
+    width: 60vw;
     margin: auto;
-    padding: 10px;
+    padding-bottom: 10px;
+    animation-duration: 1s;
+    animation-name: finish;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes finish {
+        100% {
+            padding-top: 5%;
+        }
+    }
+
+.clear {
+    clear: both;
 }
 
 #ourForm {
-    width: 500px;
-    height: 500px;
+    width: 85%;
     margin: auto;
-    padding-top: 20%;
+    padding-top: 7%;
 }
 
 h1 {
     margin: auto;
     align-self: center;
-    padding: 10%;
+    padding: 4%;
     box-sizing: border-box;
+}
+
+.slide {
+    animation-duration: 0.785s;
+    animation-name: slide;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    100% {
+        padding-top: 5%;
+    }
+}
+
+.show {
+    animation-duration: 0.5s;
+    animation-name: slide;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    100% {
+        border-bottom: 75px;
+        display: block;
+        top: 200px;
+        left: 47.5%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #main {
+        width: 100%;
+        padding-top: 10%;
+        margin: auto;
+    }
+
+    input {
+        box-sizing: border-box;
+        padding-top: 2%;
+        width: 50%;
+    }
+
+    #ourForm {
+        width: 85%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .form-control {
+        width: 50%;
+    }
 }
